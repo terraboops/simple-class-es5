@@ -1,0 +1,25 @@
+{
+  "name": "simple-class-es5",
+  "version": "1.0.0",
+  "description": "Based on http://stackoverflow.com/questions/15050816",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tylermauthe/simple-class-es5.git"
+  },
+  "keywords": [
+    "resig",
+    "simple",
+    "class",
+    "inheritance"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tylermauthe/simple-class-es5/issues"
+  },
+  "homepage": "https://github.com/tylermauthe/simple-class-es5"
+}
