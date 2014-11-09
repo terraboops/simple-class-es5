@@ -3,7 +3,7 @@
  *  (inspired by base2 and Prototype)
  * MIT Licensed.
  */
-(function(global) {
+(function() {
   "use strict";
   var fnTest = /xyz/.test(function(){xyz;}) ? /\b_super\b/ : /.*/;
 
@@ -142,6 +142,15 @@
     return newClass;
   };
 
-  // export
-  global.Class = BaseClass;
-})(this);
+  if (typeof exports === 'object') {
+    // CommonJS support
+    module.exports = BaseClass;
+  } else if (typeof define === 'function' && define.amd) {
+    // support AMD
+    define(function() { return BaseClass; });
+  } else {
+    // support browser
+    window.Class = BaseClass;
+  }
+
+})();
